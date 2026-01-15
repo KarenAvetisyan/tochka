@@ -352,8 +352,16 @@
 
 /* Футер */
 .footer{
+  background-color: #28282c;
   padding-top: 40px;
   padding-bottom: 40px;
+  color: #fff;
+}
+.footer a{
+  color: #fff;
+}
+.footer a:hover{
+  color: var(--orange);
 }
 .footer ul{
   list-style: none;
