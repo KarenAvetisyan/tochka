@@ -1,0 +1,231 @@
+/*Чем Точка сборки» отличается от других агентств маркетинга? */
+.compare-tabs{
+  border: none;
+  gap: 20px;
+}
+.compare-tabs .nav-link{
+  border: none;
+  background-color: var(--light-blue);
+  color: var(--blue);
+  border-radius: 12px;
+  padding: 0.94em;
+}
+.compare-tabs .nav-link.active{
+  background-color: var(--blue);
+  color: #fff;
+}
+.compare-tabs__vs{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 56px;
+  height: 56px;
+  z-index: 1;
+  pointer-events: none;
+}
+.compare-tab__content{
+  border: solid 1px var(--blue);
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.compare-tab__txt{
+  padding: 1.22em 1.14em;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .compare-tabs{
+    gap: 10px;
+  }
+  .compare-tabs .nav-link img{
+    max-width: 25px;
+  }
+  .compare-tabs__vs{
+    width: 44px;
+    height: 44px;
+  }
+  .compare-tab__content{
+    margin-top: 10px;
+  }
+  .compare-tab__content .icon-double-arrows{
+    transform: rotate(90deg);
+  }
+} 
+
+/*Чем мы можем
+помочь Вашему росту». */
+.start-item{
+  padding: 24px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+@media (min-width: 992px) {
+  .start-item{
+    padding: 32px;
+    border-radius: 20px;
+    height: 100%;
+  }
+}
+
+/* Кейсы  */
+.case-item{
+  border-radius: 15px;
+  padding: 20px;
+}
+.case-item__img-wrap{
+  position: relative;
+  margin-right: -10%;
+  margin-bottom: -11%;
+  width: 63%;
+  border-radius: 20px;
+  transform: rotate(-8deg);
+}
+.case-item__img{
+  border-radius: 20px;
+}
+@media (min-width: 992px) {
+  .case-item{
+    padding: 40px;
+    border-radius: 20px;
+    height: 100%;
+  }
+}
+@media (max-width: 1199px) {
+  .case-item__img-wrap{
+    width: 57%;
+    margin-right: -15%;
+    margin-bottom: -15%;
+  }
+}
+@media (max-width: 991px) {
+  .case-item__img-wrap{
+    width: 57%;
+    margin-right: -7%;
+    margin-bottom: -7%;
+  }
+}
+@media (max-width: 767px) {
+    .case-item__img-wrap {
+        margin-right: -7%;
+        margin-bottom: -9%;
+    }
+}
+@media (max-width: 479px) {
+  .case-item__img-wrap {
+    width: 40%;
+  }
+}
+
+/* Тарифы  */
+.tariff-item{
+  padding: 24px;
+  border-radius: 20px;
+}
+.tariffs-big__title{
+  font-weight: 700;
+  font-size: 13vw;
+  font-size: clamp(40px, 13vw, 222px);
+  text-transform: uppercase;
+  color: #002D6D;
+  opacity: 0.03;
+  white-space: nowrap;
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  top: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.tariff-item__wished{
+  position: absolute;
+  right: 7%;
+  top: 0;
+  display: flex;
+  max-width: clamp(45px, 5vw, 64px);
+}
+.tariff-table{
+  padding-top: 30px;
+}
+.tariff-table .icon{
+  vertical-align: middle;
+}
+.tariff-table table{
+  color: var(--blue);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.tariff-table th,
+.tariff-table td{
+  font-weight: 400;
+  vertical-align: middle; 
+  padding: 20px;
+}
+.tariff-table th:first-child,
+.tariff-table td:first-child {
+  text-align: left;
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  .tariff-item{
+    padding: 32px;
+    border-radius: 32px;
+    height: 100%;
+  }
+  .tariff-table{
+    padding-top: 60px;
+  }
+  .tariffs-big__title{
+    top: -2%;
+  }
+}
+
+/* Как мы работаем  */
+.work-step{
+  background-color: var(--lightest-blue);
+  padding: 24px;
+  border-radius: 15px;
+  height: 100%;
+}
+.work-step__num{
+  border-radius: 8px;
+  padding: 5px;
+  width: 48px;
+  height: 48px;
+}
+.work-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 32px;
+  width: calc(100% - 68px);
+  max-width: 1856px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: -1;
+}
+@media (min-width: 992px) {
+  .work-step{
+    padding: 32px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 1399px) {
+  .work-bg{
+    border-radius: 24px;
+    width: calc(100% - 20px);
+    object-position: center left;
+  }
+}
+@media (max-width: 576px) {
+  .work-container{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
