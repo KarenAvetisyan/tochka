@@ -124,48 +124,57 @@
                             <p class="fz-24">Почему мы?</p>
                         </div>
                         <div class="col-12">
-                            <ul class="compare-tabs nav nav-tabs fz-34 fw-medium flex-md-nowrap justify-content-center position-relative" id="myTab" role="tablist">
-                                <li class="nav-item w-100" role="presentation">
-                                    <button class="nav-link w-100 h-100 active" id="obichnoe-tab" data-bs-toggle="tab" data-bs-target="#obichnoe" type="button" role="tab" aria-controls="obichnoe" aria-selected="true">Обычное агентство</button>
-                                </li>
-                                <li class="compare-tabs__vs fz-24 fw-normal rounded-circle bg-white d-flex align-items-center justify-content-center">VS</li>
-                                <li class="nav-item w-100" role="presentation">
-                                    <button class="nav-link w-100 h-100" id="tochka-tab" data-bs-toggle="tab" data-bs-target="#tochka" type="button" role="tab" aria-controls="tochka" aria-selected="false"><img width="33" class="me-2" loading="lazy" src="logo.svg" alt="logo"> Точка сборки</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content fz-28 fw-medium">
-                                <div class="tab-pane fade show active" id="obichnoe" role="tabpanel" aria-labelledby="obichnoe-tab">
-                                    <div class="compare-tab__content d-flex text-center text-sm-start flex-column flex-md-row align-items-center justify-content-between">
-                                        <div class="compare-tab__txt w-md-50">Производители робототехники</div>
-                                        <i class="icon icon-double-arrows"></i>
-                                        <div class="compare-tab__txt w-md-50">Длинный цикл сделки и сложное объяснение ценности</div>
+                            <div class="compare-wrap fz-34 fw-medium text-center d-flex justify-content-center position-relative">
+                                <div class="compare-item w-100 d-flex align-items-center justify-content-center bg-blue text-white">Обычное агентство</div>
+                                <div class="compare-item__vs fz-24 fw-normal rounded-circle bg-white d-flex align-items-center justify-content-center">VS</div>
+                                <div class="compare-item w-100 d-flex align-items-center justify-content-center bg-light-blue "><img width="33" class="me-2" loading="lazy" src="logo.svg" alt="logo"> Точка сборки</div>
+                            </div>
+                            <div class="fz-28 fw-medium">
+                                <div class="accordion compare-accordion" id="accordionCompare">
+                                    <div class="accordion-item bg-transparent">
+                                        <button class="w-100 border-0 p-0 bg-transparent text-reset fw-medium d-flex text-start text-sm-start align-items-center justify-content-between"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <span class="w-50 p-lg-4 p-3">Производители робототехники</span>
+                                            <i class="icon icon-double-arrows"></i>
+                                            <span class="w-50 p-lg-4 p-3">Длинный цикл сделки и сложное объяснение ценности</span>
+                                        </button>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionCompare">
+                                            <div class="accordion-body d-flex justify-content-between align-items-center p-0 fw-normal">
+                                                <p class="w-50 fz-20 p-lg-4 p-3 mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis nesciunt vero atque nihil asperiores quisquam nostrum neque excepturi sed, sequi pariatur...</p>
+                                                <i class="icon icon-double-arrows"></i>
+                                                <p class="w-50 fz-20 p-lg-4 p-3 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati exercitationem delectus incidunt, ea rem aperiam consequatur, </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="compare-tab__content d-flex text-center text-sm-start flex-column flex-md-row align-items-center justify-content-between">
-                                        <div class="compare-tab__txt w-md-50">Интеграторы / системные интеграторы</div>
-                                        <i class="icon icon-double-arrows"></i>
-                                        <div class="compare-tab__txt w-md-50">Маркетинг не связан с отделом продаж</div>
+                                    <div class="accordion-item bg-transparent">
+                                        <button class="w-100 border-0 p-0 bg-transparent text-reset fw-medium d-flex text-start text-sm-start align-items-center justify-content-between"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            <span class="w-50 p-lg-4 p-3">Интеграторы / системные интеграторы</span>
+                                            <i class="icon icon-double-arrows"></i>
+                                            <span class="w-50 p-lg-4 p-3">Маркетинг не связан с отделом продаж</span>
+                                        </button>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionCompare">
+                                            <div class="accordion-body d-flex justify-content-between align-items-center p-0 fw-normal">
+                                                <p class="w-50 fz-20 p-lg-4 p-3 mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis nesciunt vero atque nihil asperiores quisquam nostrum neque excepturi sed, sequi pariatur...</p>
+                                                <i class="icon icon-double-arrows"></i>
+                                                <p class="w-50 fz-20 p-lg-4 p-3 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati exercitationem delectus incidunt, ea rem aperiam consequatur, </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="compare-tab__content d-flex text-center text-sm-start flex-column flex-md-row align-items-center justify-content-between">
-                                        <div class="compare-tab__txt w-md-50"></div>
-                                        <i class="icon icon-double-arrows"></i>
-                                        <div class="compare-tab__txt w-md-50">Нужна системная лидогенерация</div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="tochka" role="tabpanel" aria-labelledby="tochka-tab">
-                                    <div class="compare-tab__content d-flex text-center text-sm-start flex-column flex-md-row align-items-center justify-content-between">
-                                        <div class="compare-tab__txt w-md-50">Производители робототехники</div>
-                                        <i class="icon icon-double-arrows"></i>
-                                        <div class="compare-tab__txt w-md-50">Длинный цикл сделки и сложное объяснение ценности</div>
-                                    </div>
-                                    <div class="compare-tab__content d-flex text-center text-sm-start flex-column flex-md-row align-items-center justify-content-between">
-                                        <div class="compare-tab__txt w-md-50">Интеграторы / системные интеграторы</div>
-                                        <i class="icon icon-double-arrows"></i>
-                                        <div class="compare-tab__txt w-md-50">Маркетинг не связан с отделом продаж</div>
-                                    </div>
-                                    <div class="compare-tab__content d-flex text-center text-sm-start flex-column flex-md-row align-items-center justify-content-between">
-                                        <div class="compare-tab__txt w-md-50"></div>
-                                        <i class="icon icon-double-arrows"></i>
-                                        <div class="compare-tab__txt w-md-50">Нужна системная лидогенерация</div>
+                                    <div class="accordion-item bg-transparent">
+                                        <button class="w-100 border-0 p-0 bg-transparent text-reset fw-medium d-flex text-start text-sm-start align-items-center justify-content-between"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            <span class="w-50 p-lg-4 p-3"></span>
+                                            <i class="icon icon-double-arrows"></i>
+                                            <span class="w-50 p-lg-4 p-3">Нужна системная лидогенерация</span>
+                                        </button>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionCompare">
+                                            <div class="accordion-body d-flex justify-content-between align-items-center p-0 fw-normal">
+                                                <p class="w-50 fz-20 p-lg-4 p-3 mb-0"></p>
+                                                <i class="icon icon-double-arrows"></i>
+                                                <p class="w-50 fz-20 p-lg-4 p-3 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati exercitationem delectus incidunt, ea rem aperiam consequatur, </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -182,7 +191,7 @@
                             <p class="fz-24">Выберите сценарий — и перейдите к нужному разделу.</p>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="start-item">
+                            <div class="start-item h-100 bg-white p-32 rounded-20">
                                 <i class="d-inline-block mb-3"><img loading="lazy" src="logo.svg" alt="icon"></i>
                                 <p class="fz-28 fw-medium">Нужен аудит<br> и&nbsp;план роста</p>
                                 <p>Запустим диагностику маркетинга<br> и&nbsp;продаж</p>
@@ -190,7 +199,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="start-item">
+                            <div class="start-item h-100 bg-white p-32 rounded-20">
                                 <i class="d-inline-block mb-3"><img loading="lazy" src="logo.svg" alt="icon"></i>
                                 <p class="fz-28 fw-medium">Хочу понять,<br> как вы работаете</p>
                                 <p>Покажем процесс и артефакты<br> работы</p>
@@ -198,7 +207,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="start-item">
+                            <div class="start-item h-100 bg-white p-32 rounded-20">
                                 <i class="d-inline-block mb-3"><img loading="lazy" src="logo.svg" alt="icon"></i>
                                 <p class="fz-28 fw-medium">Интересны примеры<br> подхода</p>
                                 <p>Публикуем кейсы по мере<br> готовности</p>
@@ -219,7 +228,7 @@
                     </div>
                     <div class="row gy-3">
                         <div class="col-lg-6">
-                            <div class="case-item bg-lighter-blue position-relative overflow-hidden">
+                            <div class="case-item rounded-20 p-40 bg-lighter-blue position-relative overflow-hidden">
                                 <div class="case-item__stats d-flex flex-wrap gap-3">
                                     <div class="case-item__stat">
                                         <p class="fz-34 fw-medium mb-2">+300</p>
@@ -235,15 +244,15 @@
                                     </div>
                                 </div>
                                 <div class="case-item__bottom mt-4 d-flex justify-content-between align-items-end">
-                                    <a href="#" class="btn-transparent">Подробнее о кейсе</a>
+                                    <a href="#" class="btn-blue">Подробнее о кейсе</a>
                                     <div class="case-item__img-wrap">
-                                        <img class="case-item__img" loading="lazy" src="img/custom-image.webp" alt="img">
+                                        <img class="rounded-20" loading="lazy" src="img/custom-image.webp" alt="img">
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="case-item bg-lighter-blue position-relative overflow-hidden">
+                            <div class="case-item rounded-20 p-40 bg-lighter-blue position-relative overflow-hidden">
                                 <div class="case-item__stats d-flex flex-wrap gap-3">
                                     <div class="case-item__stat">
                                         <p class="fz-34 fw-medium mb-2">+300</p>
@@ -259,9 +268,9 @@
                                     </div>
                                 </div>
                                 <div class="case-item__bottom mt-4 d-flex justify-content-between align-items-end">
-                                    <a href="#" class="btn-transparent">Подробнее о кейсе</a>
+                                    <a href="#" class="btn-blue">Подробнее о кейсе</a>
                                     <div class="case-item__img-wrap">
-                                        <img class="case-item__img" loading="lazy" src="img/custom-image.webp" alt="img">
+                                        <img class="rounded-20" loading="lazy" src="img/custom-image.webp" alt="img">
                                     </div>
                                 </div>
                             </div>
@@ -280,7 +289,7 @@
                     </div>
                     <div class="row gy-3">
                         <div class="col-lg-4 col-md-6">
-                            <div class="tariff-item d-flex flex-wrap flex-column bg-white">
+                            <div class="tariff-item rounded-32 p-32 d-flex flex-wrap flex-column bg-white">
                                 <div class="tariff-item__head">
                                     <h3>Начальный</h3>
                                     <p>Для быстрого старта</p>
@@ -298,7 +307,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="tariff-item d-flex flex-wrap flex-column bg-lighter-blue">
+                            <div class="tariff-item rounded-32 p-32 d-flex flex-wrap flex-column bg-lighter-blue">
                                 <div class="tariff-item__head">
                                     <h3>Поддержка</h3>
                                     <p>Поддержка</p>
@@ -316,7 +325,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="tariff-item d-flex flex-wrap flex-column bg-light-blue position-relative">
+                            <div class="tariff-item rounded-32 p-32 d-flex flex-wrap flex-column bg-light-blue position-relative">
                                 <img class="tariff-item__wished" loading="lazy" src="img/wished.svg" alt="wished">
                                 <div class="tariff-item__head">
                                     <h3>Оптимальный</h3>
@@ -384,38 +393,113 @@
                     </div>
                     <div class="row gy-3">
                         <div class="col-6 col-md-4 col-lg-20">
-                            <div class="work-step">
+                            <div class="work-step p-32 rounded-20">
                                 <span class="work-step__num d-flex align-items-center justify-content-center fz-24 mb-4 bg-blue text-white">01</span>
                                 <p class="fz-24 mb-2">Диагностика</p>
                                 <p class="mb-0">[1 строка]</p>
                             </div>
                         </div>
                         <div class="col-6 col-md-4 col-lg-20">
-                            <div class="work-step">
+                            <div class="work-step p-32 rounded-20">
                                 <span class="work-step__num d-flex align-items-center justify-content-center fz-24 mb-4 bg-blue text-white">01</span>
                                 <p class="fz-24 mb-2">Диагностика</p>
                                 <p class="mb-0">[1 строка]</p>
                             </div>
                         </div>
                         <div class="col-6 col-md-4 col-lg-20">
-                            <div class="work-step">
+                            <div class="work-step p-32 rounded-20">
                                 <span class="work-step__num d-flex align-items-center justify-content-center fz-24 mb-4 bg-blue text-white">01</span>
                                 <p class="fz-24 mb-2">Диагностика</p>
                                 <p class="mb-0">[1 строка]</p>
                             </div>
                         </div>
                         <div class="col-6 col-md-4 col-lg-20">
-                            <div class="work-step">
+                            <div class="work-step p-32 rounded-20">
                                 <span class="work-step__num d-flex align-items-center justify-content-center fz-24 mb-4 bg-blue text-white">01</span>
                                 <p class="fz-24 mb-2">Диагностика</p>
                                 <p class="mb-0">[1 строка]</p>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 col-lg-20">
-                            <div class="work-step">
+                            <div class="work-step p-32 rounded-20">
                                 <span class="work-step__num d-flex align-items-center justify-content-center fz-24 mb-4 bg-blue text-white">01</span>
                                 <p class="fz-24 mb-2">Диагностика</p>
                                 <p class="mb-0">[1 строка]</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- статьи  -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mb-lg-4">
+                            <h2>Список статей / кейсов</h2>
+                        </div>
+                    </div>
+                    <div class="row gy-lg-4 gy-3">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="_article-case__item rounded-32 bg-white p-20">
+                                <div class="_article-case__item-top">
+                                    <div class="_article-case__item-img position-relative">
+                                        <img class="rounded-32" src="img/custom-image.webp" alt="img">
+                                        <span class="tip bg-blue fz-14 text-white">Кейс</span>
+                                    </div>
+                                    <div class="_article-case__item-info">
+                                        <p class="fz-28 fw-medium">Заголовок статьи / кейса 1</p>
+                                        <p class="fz-20">Краткое описание содержания статьи или кейса...</p>
+                                        <p class="fz-14">25.12.2025</p>
+                                    </div>
+                                </div>
+                                <div class="_article-case__item-bottom pt-3 mt-auto">
+                                    <a href="#" class="btn-transparent">Подробнее о кейсе</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="_article-case__item rounded-32 bg-white p-20">
+                                <div class="_article-case__item-top">
+                                    <div class="_article-case__item-img position-relative">
+                                        <img class="rounded-32" src="img/custom-image.webp" alt="img">
+                                        <span class="tip bg-blue fz-14 text-white">Кейс</span>
+                                    </div>
+                                    <div class="_article-case__item-info">
+                                        <p class="fz-28 fw-medium">Заголовок статьи / кейса 1</p>
+                                        <p class="fz-20">Краткое описание содержания статьи или кейса...</p>
+                                        <p class="fz-14">25.12.2025</p>
+                                    </div>
+                                </div>
+                                <div class="_article-case__item-bottom pt-3 mt-auto">
+                                    <a href="#" class="btn-transparent">Подробнее о кейсе</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="_article-case__item rounded-32 bg-white p-20">
+                                <div class="_article-case__item-top">
+                                    <div class="_article-case__item-img position-relative">
+                                        <img class="rounded-32" src="img/custom-image.webp" alt="img">
+                                        <span class="tip bg-blue fz-14 text-white">Кейс</span>
+                                    </div>
+                                    <div class="_article-case__item-info">
+                                        <p class="fz-28 fw-medium">Заголовок статьи / кейса 1</p>
+                                        <p class="fz-20">Краткое описание содержания статьи или кейса...</p>
+                                        <p class="fz-14">25.12.2025</p>
+                                    </div>
+                                </div>
+                                <div class="_article-case__item-bottom pt-3 mt-auto">
+                                    <a href="#" class="btn-transparent">Подробнее о кейсе</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 pt-lg-3 pt-2 text-center">
+                            <div class="row">
+                                <div class="col-lg-4"></div>
+                                <div class="col-lg-4">
+                                    <a href="article-case-list.html" class="btn-orange w-100">Читать еще</a>
+                                </div>
+                                <div class="col-lg-4"></div>
                             </div>
                         </div>
                     </div>
@@ -539,7 +623,7 @@
                         <p class="fz-18 pt-3 mb-0">Работаем с 9:00 до 18:00, понедельник-пятница</p>
                     </div>
                 </div>
-                <iframe id="contact-map" data-src="https://yandex.com/map-widget/v1/?ll=37.537374%2C55.745837&z=10.14" allowfullscreen></iframe>
+                <iframe id="contact-map" data-src="https://yandex.com/map-widget/v1/?indoorLevel=1&ll=56.242999%2C58.009024&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzIzNDk5ORJL0KDQvtGB0YHQuNGPLCDQn9C10YDQvNGMLCDQmtC-0LzRgdC-0LzQvtC70YzRgdC60LjQuSDQv9GA0L7RgdC_0LXQutGCLCAzNNCRIgoN1fhgQhU-CWhC&z=17" allowfullscreen></iframe>
                 <script>
                 'IntersectionObserver' in window &&
                 new IntersectionObserver((e,o)=>

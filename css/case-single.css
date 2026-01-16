@@ -1,0 +1,100 @@
+/* Кратко о проекте  */
+.caseAbout-item{
+    min-height: 152px;
+}
+@media (min-width: 992px) {
+    .caseAbout-item{
+        min-height: 252px;
+    }
+}
+
+/* Контекст/Задача  */
+.context-list{
+    list-style: none;
+    padding-left: 0;
+}
+.context-list li{
+    display: flex;
+    align-items: flex-start;
+}
+.context-list .num{
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 992px) {
+    .context-list .num {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* Решение: этапы работы  */
+.stages-list{
+    list-style: none;
+    padding-left: 0;
+}
+.stages-list li{
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+.stages-list li:before{
+    content: "";
+    position: absolute;
+    top: 48px;
+    left: 24px;
+    width: 1px;
+    height: 100%;
+    background-color: var(--blue);
+}
+.stages-list li:last-of-type:before{
+    display: none;
+}
+.stages-list .num{
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    border: solid 1px var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stages-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+@media (min-width: 992px) {
+    .stages-list .num {
+        width: 48px;
+        height: 48px;
+    }
+}
+@media (max-width: 991px) {
+    .stages-list li:before{
+        height: calc(100% + 18px);
+        top: 31px;
+        left: 15px;
+    }
+}
+
+/* Результат */
+.result-left{
+    min-height: 200px;
+}
+.result-item .icon{
+    width: 36px;
+    height: 36px;
+}
+@media (min-width: 992px) {
+    .result-left{
+        min-height: 281px;
+    }
+}

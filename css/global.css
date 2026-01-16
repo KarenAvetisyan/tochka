@@ -87,7 +87,7 @@ h3, ._h3{
 h4, ._h4{
   font-weight: 500;
   font-size: 28px;
-  font-size: clamp(20px, 1.40vw, 28px);
+  font-size: clamp(20px, 1.80vw, 28px);
   line-height: 1.2;
   margin-bottom: 12px;
 }
@@ -108,7 +108,7 @@ h4, ._h4{
 /* --- FZ-28 --- */
 .fz-28 {
   font-size: 28px;
-  font-size: clamp(20px, 1.50vw, 28px);
+  font-size: clamp(20px, 1.80vw, 28px);
 }
 /* --- FZ-24 --- */
 .fz-24 {
@@ -118,7 +118,7 @@ h4, ._h4{
 /* --- FZ-20 --- */
 .fz-20 {
   font-size: 20px; /* fallback */
-  font-size: clamp(16px, 1.04vw, 20px); /* responsive */
+  font-size: clamp(16px, 1.25vw, 20px); /* responsive */
 }
 /* --- FZ-14 --- */
 .fz-14{
@@ -128,6 +128,30 @@ h4, ._h4{
 /* FONT SIZES SIMPLE */
 .fz-desc{
     font-size: 24px;
+}
+
+/* ROUNDED BORDERS  */
+.rounded-32{
+    border-radius: 20px;
+}
+@media (min-width: 768px) {
+    .rounded-32{
+        border-radius: 32px;
+    }
+}
+.rounded-20{
+    border-radius: 15px;
+}
+@media (min-width: 768px) {
+    .rounded-20{
+        border-radius: 20px;
+    }
+}
+.rounded-8{
+    border-radius: 8px;
+}
+.rounded-4{
+    border-radius: 4px;
 }
 
 /* SECTION */
@@ -161,7 +185,20 @@ img{
 .pb-60 {
   padding-bottom: clamp(20px, 3.125vw, 60px);
 }
-
+.p-20{
+    padding: 20px;
+}
+.p-32{
+  padding: 24px;
+}
+@media (min-width: 992px) {
+  .p-32{
+    padding: 32px;
+  }
+}
+.p-40 {
+  padding: clamp(20px, 4vw, 40px);
+}
 .my-60 {
   margin-top: clamp(20px, 3.125vw, 60px);
   margin-bottom: clamp(20px, 3.125vw, 60px);
@@ -171,6 +208,20 @@ img{
 }
 .mb-60 {
   margin-bottom: clamp(20px, 3.125vw, 60px);
+}
+
+/* SPRITE  */
+.sprite{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+@media (min-width: 992px) {
+    .sprite{
+        width: 64px;
+        height: 64px;
+        font-size: 32px;
+    }
 }
 
 /* ul list */
@@ -203,3 +254,5 @@ img{
 .bg-blue{
   background-color: var(--blue);
 }
+
+

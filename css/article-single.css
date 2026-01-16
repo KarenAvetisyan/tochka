@@ -1,0 +1,54 @@
+
+/* материал  */
+@media (min-width: 992px) {
+    .material-item{
+        max-width: 530px;
+    }
+}
+
+/* Фактор  */
+.factor-list{
+    list-style: none;
+    padding-left: 0;
+}
+.factor-list li{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 20px;
+}
+.factor-list .num{
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.factor table{
+    color: var(--blue);
+}
+.factor table th{
+   font-weight: 400;
+   border-left: solid 2px var(--lighter-blue);
+}
+.factor table th:first-of-type{
+    border-left: none;
+}
+.factor table td{
+    border-top: solid 2px var(--light-blue);
+    border-bottom: solid 2px var(--light-blue);
+    border-left: solid 2px var(--light-blue);
+}
+.factor table tr td:first-of-type{
+    border-left: none;
+}
+.factor table tr:last-of-type td{
+    border-bottom: none;
+}
+.factor-table__wrap{
+    border: solid 1px var(--light-blue);
+    border-radius: 8px;
+}

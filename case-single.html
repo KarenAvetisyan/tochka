@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Страница с кейсom</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Put your seo description here.">
+    <meta name="keywords" content="Put your keywords here.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="font/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">	
+    <link rel="preload" href="font/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">	
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preload" href="css/icomoon-icons.css" as="style" onload="this.rel='stylesheet'"><!--НУЖЕН ВЕЗДЕ - Иконки) -->
+    <link rel="stylesheet" href="css/global.css"><!-- НУЖЕН ВЕЗДЕ -Глобальные -->
+    <link rel="stylesheet" href="css/main.css"><!-- НУЖЕН ВЕЗДЕ - Основные стили (header, footer, Повторяющиеся блоки ...) -->
+    <link rel="stylesheet" href="css/case-single.css"><!-- НУЖЕН ТОЛЬКО - для данной страницы -->
+</head>
+<body>
+
+    <div id="wrapper">
+        <header class="header">
+            <nav class="navbar navbar-expand-xl">
+                <div class="container">
+                    <a class="navbar-brand fz-24" href="#">
+                        <img src="logo.svg" alt="logo">
+                        Точка сборки</a>
+                    <div class="navbar-contact d-flex ms-auto align-items-center order-xl-2">
+                        <div class="_social-contact__wrap d-flex gap-1">
+                            <a href="tel:" class="_social-contact__link">
+                                <i class="icon icon-tel"></i>
+                            </a>
+                            <a href="#" target="_blank" class="_social-contact__link">
+                                <i class="icon icon-tg"></i>
+                            </a>
+                        </div>
+                        <button type="button" class="btn navbar-contact__btn btn-orange d-none d-md-block" data-bs-toggle="modal" data-bs-target="#modalAudit">
+                            Бесплатный аудит
+                        </button>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                         <span>&#9776;</span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Решения</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Тарифы</a>
+                            </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Как работаем</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Кейсы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Материалы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn navbar-contact__btn btn-orange d-block d-md-none" data-bs-toggle="modal" data-bs-target="#modalAudit">
+                            Бесплатный аудит
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- хлебные крошки  -->
+            <div class="container pt-3 pb-2">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb fz-14 mb-0">
+                        <li class="breadcrumb-item"><a href="#">Аналитика</a></li>
+                        <li class="breadcrumb-item"><a href="#">Команда «Точка сборки»</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">25.12.2025 </li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- баннер -->
+            <section class="caseBanner pt-lg-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="caseBanner-info">
+                                <h2>Кейс: как мы выстроили воронку лидов для интегратора робототехники</h2>
+                                <p class="fz-24">Показываем структуру и логику работы: от диагностики до управляемой воронки. Числа — условные/обезличенные, фокус — на методике.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="caseBanner-img">
+                                <img class="w-100 rounded-20" src="img/custom-image.webp" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Кратко о проекте  -->
+            <section class="caseAbout">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Кратко о проекте</h2>
+                        </div>
+                    </div>
+                    <div class="row mt-lg-2 gy-3">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="caseAbout-item h-100 d-flex flex-direction-column flex-wrap rounded-20 p-32 bg-white">
+                                <p class="fz-28 fw-medium w-100">[Клиент]</p>
+                                <p class="fz-20 mb-0 mt-auto w-100">Интегратор робототехники (обезличено)</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="caseAbout-item h-100 d-flex flex-direction-column flex-wrap rounded-20 p-32 bg-white">
+                                <p class="fz-28 fw-medium w-100">Цель</p>
+                                <p class="fz-20 mb-0 mt-auto w-100">Стабильный поток квалифицированных обращений</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="caseAbout-item h-100 d-flex flex-direction-column flex-wrap rounded-20 p-32 bg-white">
+                                <p class="fz-28 fw-medium w-100">Ограничения</p>
+                                <p class="fz-20 mb-0 mt-auto w-100">Длинный цикл сделки, сложная ценность</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="caseAbout-item h-100 d-flex flex-direction-column flex-wrap rounded-20 p-32 bg-white">
+                                <p class="fz-28 fw-medium w-100">Формат</p>
+                                <p class="fz-20 mb-0 mt-auto w-100">Стратегия + контент + связка с продажами</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Контекст/Задача -->
+            <section class="context">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-lg-6">
+                            <div class="rounded-20 p-32 bg-white">
+                                <h2>Контекст</h2>
+                                <p class="mb-4">У клиента был сильный технический продукт и опыт внедрений, но маркетинг и продажи работали разрозненно: входящие обращения были нерегулярными, а квалификация занимала много времени.</p>
+                                <div class="rounded-20 p-32 bg-blue text-white h-100">
+                                    <p class="fz-28 fw-medium">Диагностика показала</p>
+                                    <p class="mb-0">Не хватало системной «упаковки решения» и понятного пути клиента от интереса к проекту.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="rounded-20 p-32 bg-light-blue h-100">
+                                <div class="_h2">Задача</div>
+                                <ul class="context-list fz-24 mb-0 d-flex flex-wrap pt-lg-3 gap-4">
+                                    <li class="d-flex gap-lg-4 gap-3"><span class="num bg-blue text-white">01</span> Собрать понятную структуру предложения (что именно продаём и как объясняем ценность).</li>
+                                    <li class="d-flex gap-lg-4 gap-3"><span class="num bg-blue text-white">02</span> Настроить лидогенерацию под реальную аудиторию и цикл сделки.</li>
+                                    <li class="d-flex gap-lg-4 gap-3"><span class="num bg-blue text-white">03</span> Согласовать правила квалификации  и передачи лидов в продажи.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Решение: этапы работы  -->
+            <section class="stages py-120 bg-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mb-4 text-center">
+                            <h2>Решение: этапы работы</h2>
+                        </div>
+                        <div class="col-lg-6 pe-lg-5">
+                            <ul class="stages-list pe-lg-4 d-flex flex-wrap flex-direction-column gap-5">
+                                <li class="d-flex gap-lg-4 gap-3"><span class="num fz-24 bg-blue text-white">01</span> 
+                                    <div>
+                                        <p class="fz-28 fw-medium mb-2">Диагностика</p>
+                                        <span>Разбор воронки, материалов, точек потери и роли продаж</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-lg-4 gap-3"><span class="num fz-24">02</span> 
+                                    <div>
+                                        <p class="fz-28 fw-medium mb-2">Упаковка решения</p>
+                                        <span>Структура предложения, сценарии, объяснение эффекта и рисков.</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-lg-4 gap-3"><span class="num fz-24">03</span> 
+                                    <div>
+                                        <p class="fz-28 fw-medium mb-2">Контент и лид-магнит</p>
+                                        <span>Материалы под разные стадии: интерес → доверие → запрос.</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-lg-4 gap-3"><span class="num fz-24">04</span> 
+                                    <div>
+                                        <p class="fz-28 fw-medium mb-2">Каналы и аналитика</p>
+                                        <span>Запуск каналов и контроль качества лидов по понятным правилам</span>
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-lg-4 gap-3"><span class="num fz-24">05</span> 
+                                    <div>
+                                        <p class="fz-28 fw-medium mb-2">Синхронизация с продажами</p>
+                                        <span>Квалификация, карточка лида, точки передачи и обратная&nbsp;связь</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 position-relative">
+                            <img class="stages-img rounded-20" loading="lazy" src="img/custom-image.webp" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <!-- Скачать PDF-версию материала  -->
+                <div class="_material-pdf mt-lg-5 mt-3">
+                    <div class="container">
+                        <div class="_material-pdf__wrap position-relative">
+                            <img class="_material-pdf__bg rounded-20" loading="lazy" src="img/gradient-blue.webp" alt="bg">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="_h2 text-white">
+                                        Скачать PDF-версию<br> материала
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <p class="fz-24 mb-lg-4 text-white">Удобно сохранить, распечатать или отправить коллегам для обсуждения.</p>
+                                    <div class="_material-pdf__btn">
+                                        <a href="#" class="btn-orange w-100" download>Скачать PDF</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Результат  -->
+            <section class="result">
+                <div class="container">
+                    <div class="row gy-3">
+                        <div class="col-lg-4">
+                            <div class="result-left h-100 d-flex flex-wrap flex-direction-column rounded-20 p-32 bg-blue">
+                                <h2 class="w-100 text-white">Результат</h2>
+                                <p class="d-flex gap-2 rounded-pill align-items-center mb-0 bg-white mt-auto text-center py-2 px-3"><img width="24" loading="lazy" src="logo.svg" alt="logo"> Точка сборки</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="d-flex flex-wrap flex-direction-column rounded-20 h-100 p-32 bg-white">
+                                <h3>Результаты описываем на уровне структуры</h3>
+                                <div class="row gy-3 pt-lg-4 mt-auto">
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="result-item">
+                                            <i class="d-flex align-items-center justify-content-center mb-3 icon icon-checked bg-blue rounded-8 fz-14"></i>
+                                            <p class="mb-0">Появилась управляемая логика лидогенерации и квалификации</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="result-item">
+                                            <i class="d-flex align-items-center justify-content-center mb-3 icon icon-checked bg-blue rounded-8 fz-14"></i>
+                                            <p class="mb-0">Сократилось время «раскачки» на ранних этапах общения с клиентом</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6">
+                                        <div class="result-item">
+                                            <i class="d-flex align-items-center justify-content-center mb-3 icon icon-checked bg-blue rounded-8 fz-14"></i>
+                                            <p class="mb-0">Материалы стали работать как «инженерное объяснение решения»</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <ul class="d-flex flex-wrap">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Соглашение</a></li>
+                </ul>
+                <p class="fz-14 pt-2 mb-0">© 2025 Точка сборки</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- modal  -->
+    <div class="modal fade" id="modalAudit" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="_audit-wrap bg-white">
+                        <div class="row">
+                            <div class="col-12 text-center mb-lg-4 mb-2">
+                                <h2>Бесплатный аудит (до&nbsp;2&nbsp;недель)</h2>
+                                <p class="fz-24">Проведём диагностику и вернёмся с выводами и планом действий</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <div class="_audit-info">
+                                    <p class="fz-28 fw-medium">Что входит:</p>
+                                    <ul class="_custom-ul mt-2 mb-4">
+                                        <li>Аудит сайта</li>
+                                        <li>Аудит отдела продаж</li>
+                                        <li>Аудит системы маркетинга</li>
+                                        <li>Аудит продукта на рынке</li>
+                                    </ul>
+                                    <p class="fz-24 pt-2 mb-2">Связаться напрямую:</p>
+                                     <div class="_social-contact__wrap d-flex gap-1">
+                                        <a href="tel:" class="_social-contact__link">
+                                            <i class="icon icon-tel"></i>
+                                        </a>
+                                        <a href="#" target="_blank" class="_social-contact__link">
+                                            <i class="icon icon-tg"></i>
+                                        </a>
+                                        <a href="mailto:" target="_blank" class="_social-contact__link">
+                                            <i class="icon icon-mail"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="_audit-form mx-lg-auto bg-lighter-blue">
+                                    <form class="needs-validation" novalidate>
+                                        <div class="col-12 text-center fz-28 fw-medium mb-3">
+                                            Оставить заявку
+                                        </div>
+                                        <div class="row _audit-form__fields-row">
+                                            <div class="col-sm-6 _audit-form__field">
+                                                <input type="text" class="form-control" name="name" placeholder="Имя">
+                                                <div class="invalid-feedback">
+                                                    Поле обязательно для заполнения.
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 _audit-form__field">
+                                                <input type="text" class="form-control" name="company" placeholder="Компания">
+                                                <div class="invalid-feedback">
+                                                    Поле обязательно для заполнения.
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 _audit-form__field">
+                                                <input type="tel" class="form-control" name="tel" placeholder="Телефон" required>
+                                                <div class="invalid-feedback">
+                                                    Поле обязательно для заполнения.
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 _audit-form__field">
+                                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                                <div class="invalid-feedback">
+                                                    Поле обязательно для заполнения.
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 _audit-form__field">
+                                                <select class="form-select" name="company_type" required>
+                                                    <option value="">Тип компании</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                </select>
+                                                <div class="invalid-feedback">
+                                                    Поле обязательно для заполнения.
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 _audit-form__field">
+                                                <input type="text" class="form-control" name="site" placeholder="Сайт (опционально)" required>
+                                                <div class="invalid-feedback">
+                                                    Поле обязательно для заполнения.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-orange w-100 mb-2">Провести аудит</button>
+                                        <label class="form-check mb-0 align-items-center d-flex gap-2">
+                                            <input class="form-check-input flex-shrink-0" type="checkbox" value="" name="agree" checked required>
+                                            <span class="form-check-label">
+                                                Согласен(на) с обработкой персональных данных
+                                            </span>
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Валидция bootstrap 5 -->
+    <script>
+        const forms = document.querySelectorAll('.needs-validation');
+        Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+            }, false);
+        });
+    </script>
+</body>
+</html>
+
